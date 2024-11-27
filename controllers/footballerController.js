@@ -5,7 +5,7 @@ export const createFootballer = async (req, res) => {
   const createdBy = req.user._id;
   try {
     const newFootballer = new footballerModel({
-      fullName,
+      fullName: fullName,
       position,
       avatar,
       nationality,
